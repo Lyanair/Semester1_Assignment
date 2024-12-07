@@ -22,3 +22,11 @@ func _process(delta: float) -> void:
 	
 	if Input.is_action_just_released(keybind):
 		self.modulate = Color.WHITE
+
+
+func _on_h_slider_value_changed(value: float) -> void:
+	currsound.volume_db = linear_to_db(value)
+
+
+func _on_h_slider_2_value_changed(value: int) -> void:
+	currsound.pitch_scale = value
