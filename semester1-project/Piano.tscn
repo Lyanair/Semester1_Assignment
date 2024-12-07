@@ -31,17 +31,98 @@
 script = ExtResource("1_quxlf")
 
 [node name="Sprite2D" type="Sprite2D" parent="." node_paths=PackedStringArray("Pianosound", "Drumsound")]
-position = Vector2(209, 442)
+position = Vector2(80, 451)
 texture = ExtResource("1_hbh86")
 script = ExtResource("2_pcrys")
 Pianosound = NodePath("../Piano Sound Players/Piano a")
 Drumsound = NodePath("../Drum Sound Players/Drums 1")
 
 [node name="Sprite2D2" type="Sprite2D" parent="." node_paths=PackedStringArray("Pianosound", "Drumsound")]
-position = Vector2(348, 441)
+position = Vector2(200, 451)
 texture = ExtResource("1_hbh86")
 script = ExtResource("2_pcrys")
 keybind = "s"
+Pianosound = NodePath("../Piano Sound Players/Piano b")
+Drumsound = NodePath("../Drum Sound Players/Drums 2")
+
+[node name="Sprite2D3" type="Sprite2D" parent="." node_paths=PackedStringArray("Pianosound", "Drumsound")]
+position = Vector2(320, 451)
+texture = ExtResource("1_hbh86")
+script = ExtResource("2_pcrys")
+keybind = "d"
+Pianosound = NodePath("../Piano Sound Players/Piano bb")
+Drumsound = NodePath("../Drum Sound Players/Drums 3")
+
+[node name="Sprite2D4" type="Sprite2D" parent="." node_paths=PackedStringArray("Pianosound", "Drumsound")]
+position = Vector2(440, 451)
+texture = ExtResource("1_hbh86")
+script = ExtResource("2_pcrys")
+keybind = "f"
+Pianosound = NodePath("../Piano Sound Players/Piano c")
+Drumsound = NodePath("../Drum Sound Players/Drums 4")
+
+[node name="Sprite2D5" type="Sprite2D" parent="." node_paths=PackedStringArray("Pianosound", "Drumsound")]
+position = Vector2(560, 451)
+texture = ExtResource("1_hbh86")
+script = ExtResource("2_pcrys")
+keybind = "g"
+Pianosound = NodePath("../Piano Sound Players/Piano c2")
+Drumsound = NodePath("../Drum Sound Players/Drums 5")
+
+[node name="Sprite2D6" type="Sprite2D" parent="." node_paths=PackedStringArray("Pianosound", "Drumsound")]
+position = Vector2(680, 451)
+texture = ExtResource("1_hbh86")
+script = ExtResource("2_pcrys")
+keybind = "h"
+Pianosound = NodePath("../Piano Sound Players/Piano d")
+Drumsound = NodePath("../Drum Sound Players/Drums 6")
+
+[node name="Sprite2D7" type="Sprite2D" parent="." node_paths=PackedStringArray("Pianosound", "Drumsound")]
+position = Vector2(800, 451)
+texture = ExtResource("1_hbh86")
+script = ExtResource("2_pcrys")
+keybind = "j"
+Pianosound = NodePath("../Piano Sound Players/Piano e")
+Drumsound = NodePath("../Drum Sound Players/Drums 7")
+
+[node name="Sprite2D8" type="Sprite2D" parent="." node_paths=PackedStringArray("Pianosound", "Drumsound")]
+position = Vector2(920, 451)
+texture = ExtResource("1_hbh86")
+script = ExtResource("2_pcrys")
+keybind = "k"
+Pianosound = NodePath("../Piano Sound Players/Piano eb")
+Drumsound = NodePath("../Drum Sound Players/Drums 8")
+
+[node name="Sprite2D9" type="Sprite2D" parent="." node_paths=PackedStringArray("Pianosound", "Drumsound")]
+position = Vector2(1040, 451)
+texture = ExtResource("1_hbh86")
+script = ExtResource("2_pcrys")
+keybind = "l"
+Pianosound = NodePath("../Piano Sound Players/Piano f")
+Drumsound = NodePath("../Drum Sound Players/Drums 9")
+
+[node name="Sprite2D10" type="Sprite2D" parent="." node_paths=PackedStringArray("Pianosound", "Drumsound")]
+position = Vector2(492, 577)
+texture = ExtResource("1_hbh86")
+script = ExtResource("2_pcrys")
+keybind = ";"
+Pianosound = NodePath("../Piano Sound Players/Piano f2")
+Drumsound = NodePath("../Drum Sound Players/Drums 10")
+
+[node name="Sprite2D11" type="Sprite2D" parent="." node_paths=PackedStringArray("Pianosound", "Drumsound")]
+position = Vector2(627, 575)
+texture = ExtResource("1_hbh86")
+script = ExtResource("2_pcrys")
+keybind = "'"
+Pianosound = NodePath("../Piano Sound Players/Piano g")
+Drumsound = NodePath("../Drum Sound Players/Drums 11")
+
+[node name="Sprite2D12" type="Sprite2D" parent="." node_paths=PackedStringArray("Pianosound", "Drumsound")]
+visible = false
+position = Vector2(1626, 307)
+texture = ExtResource("1_hbh86")
+script = ExtResource("2_pcrys")
+keybind = ""
 Pianosound = NodePath("../Piano Sound Players/Piano b")
 Drumsound = NodePath("../Drum Sound Players/Drums 2")
 
@@ -193,9 +274,45 @@ stream = ExtResource("25_rycur")
 
 [connection signal="button_down" from="Button" to="Sprite2D" method="_on_button_button_down"]
 [connection signal="button_down" from="Button" to="Sprite2D2" method="_on_button_button_down"]
+[connection signal="button_down" from="Button" to="Sprite2D3" method="_on_button_button_down"]
+[connection signal="button_down" from="Button" to="Sprite2D4" method="_on_button_button_down"]
+[connection signal="button_down" from="Button" to="Sprite2D5" method="_on_button_button_down"]
+[connection signal="button_down" from="Button" to="Sprite2D6" method="_on_button_button_down"]
+[connection signal="button_down" from="Button" to="Sprite2D7" method="_on_button_button_down"]
+[connection signal="button_down" from="Button" to="Sprite2D8" method="_on_button_button_down"]
+[connection signal="button_down" from="Button" to="Sprite2D9" method="_on_button_button_down"]
+[connection signal="button_down" from="Button" to="Sprite2D10" method="_on_button_button_down"]
+[connection signal="button_down" from="Button" to="Sprite2D11" method="_on_button_button_down"]
 [connection signal="button_down" from="Button2" to="Sprite2D" method="_on_button_2_button_down"]
 [connection signal="button_down" from="Button2" to="Sprite2D2" method="_on_button_2_button_down"]
+[connection signal="button_down" from="Button2" to="Sprite2D3" method="_on_button_2_button_down"]
+[connection signal="button_down" from="Button2" to="Sprite2D4" method="_on_button_2_button_down"]
+[connection signal="button_down" from="Button2" to="Sprite2D5" method="_on_button_2_button_down"]
+[connection signal="button_down" from="Button2" to="Sprite2D6" method="_on_button_2_button_down"]
+[connection signal="button_down" from="Button2" to="Sprite2D7" method="_on_button_2_button_down"]
+[connection signal="button_down" from="Button2" to="Sprite2D8" method="_on_button_2_button_down"]
+[connection signal="button_down" from="Button2" to="Sprite2D9" method="_on_button_2_button_down"]
+[connection signal="button_down" from="Button2" to="Sprite2D10" method="_on_button_2_button_down"]
+[connection signal="button_down" from="Button2" to="Sprite2D11" method="_on_button_2_button_down"]
 [connection signal="value_changed" from="HSlider" to="Sprite2D" method="_on_h_slider_value_changed"]
 [connection signal="value_changed" from="HSlider" to="Sprite2D2" method="_on_h_slider_value_changed"]
+[connection signal="value_changed" from="HSlider" to="Sprite2D3" method="_on_h_slider_value_changed"]
+[connection signal="value_changed" from="HSlider" to="Sprite2D4" method="_on_h_slider_value_changed"]
+[connection signal="value_changed" from="HSlider" to="Sprite2D5" method="_on_h_slider_value_changed"]
+[connection signal="value_changed" from="HSlider" to="Sprite2D6" method="_on_h_slider_value_changed"]
+[connection signal="value_changed" from="HSlider" to="Sprite2D7" method="_on_h_slider_value_changed"]
+[connection signal="value_changed" from="HSlider" to="Sprite2D8" method="_on_h_slider_value_changed"]
+[connection signal="value_changed" from="HSlider" to="Sprite2D9" method="_on_h_slider_value_changed"]
+[connection signal="value_changed" from="HSlider" to="Sprite2D10" method="_on_h_slider_value_changed"]
+[connection signal="value_changed" from="HSlider" to="Sprite2D11" method="_on_h_slider_value_changed"]
 [connection signal="value_changed" from="HSlider2" to="Sprite2D" method="_on_h_slider_2_value_changed"]
 [connection signal="value_changed" from="HSlider2" to="Sprite2D2" method="_on_h_slider_2_value_changed"]
+[connection signal="value_changed" from="HSlider2" to="Sprite2D3" method="_on_h_slider_2_value_changed"]
+[connection signal="value_changed" from="HSlider2" to="Sprite2D4" method="_on_h_slider_2_value_changed"]
+[connection signal="value_changed" from="HSlider2" to="Sprite2D5" method="_on_h_slider_2_value_changed"]
+[connection signal="value_changed" from="HSlider2" to="Sprite2D6" method="_on_h_slider_2_value_changed"]
+[connection signal="value_changed" from="HSlider2" to="Sprite2D7" method="_on_h_slider_2_value_changed"]
+[connection signal="value_changed" from="HSlider2" to="Sprite2D8" method="_on_h_slider_2_value_changed"]
+[connection signal="value_changed" from="HSlider2" to="Sprite2D9" method="_on_h_slider_2_value_changed"]
+[connection signal="value_changed" from="HSlider2" to="Sprite2D10" method="_on_h_slider_2_value_changed"]
+[connection signal="value_changed" from="HSlider2" to="Sprite2D11" method="_on_h_slider_2_value_changed"]
